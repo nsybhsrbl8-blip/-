@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقارنة أسعار الانترنت والاتصالات - السودان</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>مقارنة أسعار باقات السودان</h1>
+        <p>زين - سوداني - ام تي ان</p>
+    </header>
+
+    <div class="filters">
+        <button onclick="filterType('all')" class="active">الكل</button>
+        <button onclick="filterType('انترنت')">انترنت</button>
+        <button onclick="filterType('مكالمات')">مكالمات</button>
+        
+        <select id="companyFilter" onchange="filterCompany()">
+            <option value="all">كل الشركات</option>
+            <option value="زين">زين</option>
+            <option value="سوداني">سوداني</option>
+            <option value="ام تي ان">ام تي ان</option>
+        </select>
+    </div>
+
+    <div class="grid" id="packagesGrid">
+        <!-- الباقات بتظهر هنا بالجافاسكريبت -->
+    </div>
+
+    <footer>
+        <p>© 2026 موقع مقارنة الاسعار في السودان</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
